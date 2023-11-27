@@ -41,7 +41,7 @@ export default {
   methods:{
     saveUser(){
       axios.post('http://localhost:8081/v1/users',this.model.user).then(res => {
-        alert("User was saving successful" + res);
+        alert("User was saving successful" );
 
       }).catch(function (error){
         alert("User don't create, because dates of form isn't well")

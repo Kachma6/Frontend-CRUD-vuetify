@@ -1,7 +1,13 @@
+<script>
+export default {
+  name: "Home"
+}
+</script>
+
 <template>
-  <HelloWorld />
+ <h1 class="text-primary d-flex align-center justify-center"  >Hello with VUE JS</h1>
 </template>
 
-<script setup>
-  import HelloWorld from '@/components/HelloWorld.vue'
-</script>
+<style scoped>
+
+</style>

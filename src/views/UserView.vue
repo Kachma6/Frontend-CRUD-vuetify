@@ -16,7 +16,7 @@
         class="bg-primary"
         rounded
       >
-        <v-toolbar-title >USERS</v-toolbar-title>
+        <v-toolbar-title >LIST OF USERS</v-toolbar-title>
 
         <v-spacer></v-spacer>
         <v-dialog

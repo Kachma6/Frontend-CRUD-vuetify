@@ -26,7 +26,7 @@ export default {
       },
       rules: [
         value => !!value || 'Required.',
-        value => (value && value.length >= 2) || 'Min 3 characters',
+        value => (value && value.length >= 2) || 'Min 2 characters',
       ],
       emailRules: [
         value => {
@@ -52,7 +52,7 @@ export default {
     },
     editUser(){
       axios.put(`http://localhost:8081/v1/users/${this.userId}`, this.model.user).then(res => {
-        alert("User was editing successful"+res);
+        alert("User was editing successful");
 
       }).catch(function (error){
         alert("User don't edit, because dates of form isn't well")
@@ -116,7 +116,7 @@ export default {
             label="Age"
             v-model="model.user.age"
             type="number"
-            :rules="rules"
+
             hide-details="auto"
           ></v-text-field>
         </v-col>

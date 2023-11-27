@@ -12,7 +12,9 @@ export default {
       drawer: false,
       menuItems: [
         { title: 'Home', path: '/' },
-        { title: 'View List of Users', path: '/user' },
+        { title: 'About Us', path: '/' },
+        { title: 'Rols', path: '/' },
+        { title: 'Users', path: '/user' },
 
         // Add more menu items as needed
       ],
@@ -24,16 +26,19 @@ export default {
 
 
     <v-app>
-<!--      <v-navigation-drawer app>-->
-<!--        &lt;!&ndash; Your navigation drawer content goes here &ndash;&gt;-->
-<!--        <v-list>-->
-<!--          <v-list-item v-for="item in menuItems" :key="item.path" :to="item.path" link>-->
-<!--            <v-list-item-content>-->
-<!--              <v-list-item-title>{{ item.title }}</v-list-item-title>-->
-<!--            </v-list-item-content>-->
-<!--          </v-list-item>-->
-<!--        </v-list>-->
-<!--      </v-navigation-drawer>-->
+      <v-navigation-drawer app
+                           class="bg-primary"
+      >
+        <!-- Your navigation drawer content goes here -->
+        <v-list >
+          <h1 class="ml-3 mb-5" >Menu</h1>
+          <v-list-item class="mt-1 mr-1 ml-1" rounded  v-for="item in menuItems" :key="item.path" :to="item.path" link>
+            <v-list-item-content>
+              <v-list-item-title >{{ item.title }}</v-list-item-title>
+            </v-list-item-content>
+          </v-list-item>
+        </v-list>
+      </v-navigation-drawer>
 
       <v-app-bar app
        class="bg-primary"

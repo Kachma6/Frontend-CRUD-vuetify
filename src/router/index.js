@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import userCreateView from "@/views/UserCreateView.vue";
 import userEditView from "@/views/UserEditView.vue";
 import userView from "@/views/UserView.vue";
+import Home from "@/views/Home.vue";
 
 const routes = [
   {
@@ -31,6 +32,11 @@ const routes = [
         path: '/user/:id/edit',
         name: 'userEdit',
         component: userEditView
+      },
+      {
+        path: '/home',
+        name: 'home',
+        component: Home
       },
     ],
   },
